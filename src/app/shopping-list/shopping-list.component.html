@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-xs-10">
+        <router-outlet></router-outlet>
+        <hr>
+        <ul class="list-group">
+            <button class="btn btn-primary" [routerLink]="['./edit']">Edit List</button>
+            <br><br>
+            <a class="list-group-item" style="cursor: pointer" *ngFor="let ingredient of ingredients; let i = index" (click)="onEditItem(i)">
+        {{ ingredient.name }} ({{ ingredient.amount }})
+      </a>
+        </ul>
+    </div>
+</div>

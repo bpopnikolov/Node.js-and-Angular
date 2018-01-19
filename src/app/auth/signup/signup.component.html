@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-8 col-sm-6 col-md-6 col-xs-offset-2 col-sm-offset-3 col-md-offset-3">
+            <form (ngSubmit)="onSignup()" #f="ngForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" name="email" ngModel>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" name="password" ngModel>
+                </div>
+                <button class="btn btn-primary" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</div>
